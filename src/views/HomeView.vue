@@ -109,7 +109,13 @@ onBeforeUnmount(stopFleetAutoplay)
             <svg v-else-if="item.id === 'vehicle'" viewBox="0 0 48 48"><path d="M6 16h24v19H6zM30 23h7l5 6v6H30zM11 35a4 4 0 1 0 8 0M32 35a4 4 0 1 0 8 0M10 21h16"/></svg>
             <svg v-else viewBox="0 0 48 48"><path d="M24 5 40 11v11c0 10-6 17-16 22C14 39 8 32 8 22V11Z"/><path d="m16 24 6 6 11-13"/></svg>
           </span>
-          <div><h3>{{ item.title[locale] }}</h3><p>{{ item.text[locale] }}</p></div>
+          <div>
+            <h3>{{ item.title[locale] }}</h3>
+            <strong v-if="item.id === 'payment'" class="benefit-highlight">
+              {{ item.highlight?.[locale] || (locale === 'es' ? 'Sin pago anticipado' : 'No prepayment required') }}
+            </strong>
+            <p>{{ item.text[locale] }}</p>
+          </div>
         </article>
       </div>
     </div>

@@ -44,7 +44,7 @@ function closeMenu() {
         <button type="button" :class="{ active: locale === 'en' }" :aria-pressed="locale === 'en'" aria-label="Switch language to English" @click="setLanguage('en')">EN</button>
         <a class="nav-phone" :href="whatsappUrl" target="_blank" rel="noopener">☎ {{ siteConfig.phone.display }}</a>
         <a class="nav-wa" :href="whatsappUrl" target="_blank" rel="noopener">{{ locale === 'es' ? 'Soporte 24/7' : '24/7 Support' }}</a>
-        <button class="menu-toggle" type="button" :aria-expanded="menuOpen" :aria-label="t('nav.menu')" @click="menuOpen = !menuOpen">
+        <button class="menu-toggle" :class="{ open: menuOpen }" type="button" :aria-expanded="menuOpen" :aria-label="t('nav.menu')" @click="menuOpen = !menuOpen">
           <span></span><span></span><span></span>
         </button>
       </div>
