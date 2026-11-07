@@ -8,6 +8,7 @@ export const siteConfig = {
     display: '+52 984 218 3924'
   },
   images: {
+    home: '/images/site/home-img.jpg',
     hero: '/images/site/hero.jpg',
     transfer: '/images/site/transfer.jpg'
   }

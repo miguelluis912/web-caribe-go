@@ -67,7 +67,7 @@ onBeforeUnmount(stopFleetAutoplay)
 </script>
 
 <template>
-  <section class="hero home-hero" :style="{ backgroundImage: `url(${siteConfig.images.hero})` }">
+  <section class="hero home-hero" :style="{ backgroundImage: `url(${siteConfig.images.home})` }">
     <div class="hero-overlay"></div>
     <div class="container hero-content home-hero-content">
       <span class="eyebrow">{{ t('hero.eyebrow') }}</span>

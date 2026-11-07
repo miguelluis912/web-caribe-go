@@ -169,12 +169,17 @@ button {
 }
 
 .hero {
-  min-height: 690px;
+  min-height: 590px;
   position: relative;
   display: flex;
   align-items: center;
   color: white;
-  background: url('/images/site/hero.jpg') center/cover;
+
+  background-image: url('/images/site/hero.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #086b80;
 }
 
 .hero-overlay,
